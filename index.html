@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <title>Dashboard Design</title>
+</head>
+<body>
+
+
+<input type="checkbox" id  = "check">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3 class= "brand">
+        <span>BrandName</span>
+        </h3>
+        <label for = "check">
+          <i class="far fa-bars" id = "sidebar_btn"></i>
+        </label>
+    </div>
+
+    <div class="sidebar-menu">
+    <ul>
+        <li>
+            <a href="">
+                <span class ="home"><i class="fas fa-home"></i></span>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <span class = "team"><i class="fas fa-users"></i></span>
+                <span>Team</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <span class = "task"><i class="fas fa-tasks"></i></span>
+                <span>Tasks</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <span class = "leaves"><i class="fas fa-newspaper"></i></span>
+                <span>Leaves</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <span class = "project"><i class="fas fa-folder-open"></i></span>
+                <span>Projects</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <span class = "time-sheet"><i class="fas fa-clock"></i></span>
+                <span>Timesheet</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <span class = "contact"><i class="fas fa-address-book"></i></span>
+                <span>Contact</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <span class = "account"><i class="fas fa-cog"></i></span>
+                <span>Accounts</span>
+            </a>
+        </li>
+    </ul>
+  </div>
+  </div>
+
+
+  <div class="main-content">
+    <header>
+      <div class = "search-block">
+        <span class = "search-wrapper"><i class="fas fa-search"></i></span>
+        <input type="search" placeholder="Search">
+      </div>
+      <div class="social-icons">
+        <span class = "notification"><i class="fas fa-bell"></i></span>
+        <span class = "comment"><i class="fas fa-comment-dots"></i></span>
+        <div class = "user"><img src="./profile.png" alt=""></div>
+      </div>
+    </header>
+
+    <div class="main">
+      <h2 class = "dash-title">Overview</h2>
+      <div class="dash-cards">
+        <div class="card-single">
+          <div class="card-body">
+            <span class = "briefcase"><i class="fas fa-briefcase"></i></span>
+            <div class = "details">
+              <h5>Account Balance</h5>
+              <h4>$30,6583.52</h4>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="">View all</a>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div class="card-body">
+            <span class = "briefcase"><i class="fas fa-user-edit"></i></span>
+            <div class = "details">
+              <h5>Pending</h5>
+              <h4>$10,6583.52</h4>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="">View all</a>
+          </div>
+        </div>
+
+        <div class="card-single">
+          <div class="card-body">
+            <span class = "briefcase"><i class="fas fa-chalkboard-teacher"></i></span>
+            <div class = "details">
+              <h5>Processed</h5>
+              <h4>$20,523.45</h4>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="">View all</a>
+          </div>
+        </div>
+  </div>
+
+  <section class = "recent">
+    <div class="activity-grid">
+    <div class="activity-card">
+      <h3>Recent activity</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Team</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>App Development</td>
+            <td>15 July, 2020</td>
+            <td>22 Aug, 2020</td>
+            <td class = "td-team">
+              <div class = "img-1"></div>
+              <div class = "img-2"></div>
+              <div class = "img-3"></div>
+            </td>
+            <td>
+              <span class = "success">Success</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Frontend Design</td>
+            <td>15 July, 2020</td>
+            <td>22 Aug, 2020</td>
+            <td class = "td-team">
+              <div class = "img-1"></div>
+              <div class = "img-2"></div>
+              <div class = "img-3"></div>
+            </td>
+            <td>
+              <span class = "warning">Processing</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Web Development</td>
+            <td>15 July, 2020</td>
+            <td>22 Aug, 2020</td>
+            <td class = "td-team">
+              <div class = "img-1"></div>
+              <div class = "img-2"></div>
+              <div class = "img-3"></div>
+            </td>
+            <td>
+              <span class = "success">Success</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Visual Design</td>
+            <td>15 July, 2020</td>
+            <td>22 Aug, 2020</td>
+            <td class = "td-team">
+              <div class = "img-1"></div>
+              <div class = "img-2"></div>
+              <div class = "img-3"></div>
+            </td>
+            <td>
+              <span class = "warning">Processing</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Server Setup</td>
+            <td>15 July, 2020</td>
+            <td>22 Aug, 2020</td>
+            <td class = "td-team">
+              <div class = "img-1"></div>
+              <div class = "img-2"></div>
+              <div class = "img-3"></div>
+            </td>
+            <td>
+              <span class = "success">Success</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+
+    <div class="summery">
+      <div class="summery-card">
+        <div class = "summery-single">
+          <span class = "badge1"><i class="far fa-id-card"></i></span>
+          <div>
+            <h5>195</h5>
+            <small>Number of Staff</small>
+          </div>
+        </div>
+
+        <div class = "summery-single">
+          <span class = "profile"><i class="far fa-smile"></i></span>
+          <div>
+            <h5>12</h5>
+            <small>Profile update request</small>
+          </div>
+        </div>
+
+        <div class = "summery-single">
+          <span class = "calender"><i class="far fa-calendar-alt"></i></i></span>
+          <div>
+            <h5>15</h5>
+            <small>Number of leaves</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="bday-card">
+        <div class="bday-img"></div>
+        <div class="bday-info">
+          <h5>John S. Smith</h5>
+          <small>Birthday Today</small>
+          <div>
+            <button class = "wish-btn">
+              <span class = "gift"><i class="fas fa-gift"></i>Wish him</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</body>
+</html>
