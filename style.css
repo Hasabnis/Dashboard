@@ -1,0 +1,353 @@
+
+:root {
+  --main-color : #027581;
+  --color-dark : #1d2231;
+  --text-gray : #8390A2;
+}
+
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.sidebar{
+  height:100%;
+  width:240px;
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: 100;
+  background: var(--main-color);
+  color:#fff;
+  overflow-y: auto;
+}
+
+
+.sidebar-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0rem 1rem;
+}
+
+.sidebar-menu{
+  padding: 1rem;
+}
+
+.sidebar li{
+  margin-bottom: 1.2rem;
+}
+
+.sidebar a{
+  color:#fff;
+  font-size: 0.9rem;
+}
+
+.sidebar a span:last-child{
+  padding-left:0.6rem;
+}
+
+label #sidebar_btn{
+  z-index: 1;
+  cursor: pointer;
+}
+
+#check:checked ~ .sidebar{
+  left:-190px;
+}
+
+#check:checked ~ i.far fa-bars #sidebar_btn{
+  padding-right: 3px;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 160px;
+  width:80px;
+}
+
+#check:checked ~ .sidebar ul{
+  margin-left:28px;
+}
+
+#check:checked ~ .main-content header div:first-child{
+  margin-left:-180px;
+  transition: margin-left 500ms;
+}
+
+
+#check:checked ~ .main-content{
+  margin-left:60px;
+  transition: margin-left 500ms;
+}
+
+
+.main-content{
+  position: relative;
+  margin-left: 240px;
+  transition: margin-left 500ms;
+}
+
+header{
+  position: fixed;
+  left: 240px;
+  top:0;
+  z-index: 100;
+  width: calc(100% - 240px);
+  background: #fff;
+  height: 60px;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+header div.search-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+input{
+  border:none;
+  outline:none;
+  padding: 1rem;
+  height: 38px;
+}
+
+.social-icons{
+  display: flex;
+  align-items: center;
+}
+
+.social-icons span,
+.social-icons div.user{
+  margin-left: 1.2rem;
+}
+
+.social-icons div.user img{
+  height: 30px;
+  width: 30px;
+}
+
+.main{
+  margin-top: 18px;
+  background: #f1f5f9;
+  min-height: 100vh;
+  padding: 1rem 3rem;
+}
+
+.dash-title{
+  color:var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.dash-cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap:2rem;
+}
+
+.card-single{
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-body{
+  padding: 1.3rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-body{
+  font-size:1.3rem 1rem;
+  color:#666;
+  padding-right:1rem;
+}
+
+.details{
+  padding-left: 2rem;
+}
+
+.card-body h5{
+  color:var(text-gray);
+  font-size: 1rem;
+}
+
+.card-body h4{
+  color: var(--color-dark);
+  font-size: 1.1rem;
+  margin-top: .2rem;
+}
+
+.card-footer{
+  padding: .2rem 1rem;
+  background: #f9fafc;
+}
+
+.card-footer a{
+  color: var(--main-color);
+}
+
+.recent{
+  margin-top:3rem;
+  margin-bottom: 3rem
+}
+
+section.recent .activity-grid{
+display: grid;
+grid-template-columns: 80% 20%;
+column-gap: 1.5rem;
+}
+
+.activity-card, .summery-card, .bday-card{
+  background: #fff;
+  border-radius: 7px;
+
+}
+
+.activity-card h3{
+  color:var(--text-gray);
+  margin: 1rem;
+}
+
+.activity-card table{
+  width:100%;
+  border-collapse: collapse;
+}
+
+
+.activity-card thead{
+  background: #efefef;
+  text-align: left;
+}
+
+th,td{
+  font-size: .9rem;
+  padding: 1rem 1rem;
+  color:var(--color-dark);
+}
+
+td{
+  font-size: .8rem;
+}
+
+tbody tr:nth-child(even){
+  background: #f9fafc;
+}
+
+
+.success{
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  background: #def7ec;
+  font-weight: 700;
+  text-align: center;
+}
+
+.warning{
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  background: #f0f6b2;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.td-team{
+  display:flex;
+  align-items: center;
+}
+
+
+.img-1, .img-2, .img-3{
+  height: 35px;
+  width:35px;
+  border-radius: 50%;
+  margin-left:-15px;
+  border:2px solid #ccc;
+  background: #efefef;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-1 {
+  background-image: url(./img1.png);
+}
+
+.img-2 {
+  background-image: url(./img2.png);
+}
+.img-3 {
+  background-image: url(./img3.png);
+}
+
+.summery-card{
+  margin-bottom: 2.5rem;
+  padding-top:.5rem;
+  padding-bottom: .5rem;
+}
+.summery-single{
+  padding: .3rem 1rem;
+  display:flex;
+  align-items: center;
+}
+
+.summery-single span{
+  font-size: 1.5rem;
+  color: #777;
+  padding-right: 1rem;
+}
+
+.summery-single h5{
+  color:var(--main-color);
+  font-size: 1.1rem;
+  margin-bottom: 0rem !important;
+}
+
+.summery-single small{
+  font-weight: 700;
+  color: var(--text-gray);
+}
+
+.bday-card{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.bday-img{
+  height: 60px;
+  width:60px;
+  border-radius: 50%;
+  border:2px solid #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./img2.png);
+  margin-right: 1rem;
+}
+
+.wish-btn{
+  border:none;
+  background: var(--main-color);
+  padding: .5rem;
+  margin-top:1rem;
+  color:#fff;
+}
+
+.wish-btn span.gift{
+  text-align: center;
+}
+
+@media only screen and (max-width:1200px){
+  .sidebar{
+    width: 60px;
+  }
+}
